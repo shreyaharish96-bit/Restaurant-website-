@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAS Restaurant</title>
+    <style>
+      .container {
+        display: grid;
+        height: 95vh;
+        grid-template-rows: 1fr 4fr 2fr 0.3fr;
+        grid-template-columns: 3fr 2fr;
+      }
+      .header {
+        background-color: purple;
+        grid-row: 1/2;
+        grid-column: 1/3;
+      }
+      .main-menu {
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+        background-color: peachpuff;
+        grid-row: 2/3;
+        grid-column: 1/3;
+      }
+      .about {
+        background-color: burlywood;
+        grid-row: 3/4;
+        grid-column: 1/2;
+      }
+      .contact {
+        background-color: burlywood;
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
+      .footer {
+        background-color: purple;
+        grid-row: 4/5;
+        grid-column: 1/3;
+      }
+      .box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: goldenrod;
+      }
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: brown;
+      }
+      h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: brown;
+      }
+      .cat {
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid purple;
+        background-color: violet;
+        height: 300px;
+        width: 300px;
+      }
+      h4 {
+        color: brown;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .ab1 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h5 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header box1 box">
+        <img
+          src="data:image/webp;base64,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"
+          alt="HAS Restaurant Logo"
+          height="60px"
+        />
+        <h1>HAS RESTAURANT</h1>
+      </div>
+      <div class="main-menu box2 box">
+        <h2>CATEGORIES</h2>
+        <br />
+        <hr />
+        <div class="cat">
+          <h3>STARTERS</h3>
+          <ul>
+            <li><h5>PANEER TIKKA --> RS:250</h5></li>
+            <li><h5>SPRING ROLL --> RS:180</h5></li>
+            <li><h5>CHILLI PANEER --> RS:230</h5></li>
+            <li><h5>ALOO TIKKI --> RS:150</h5></li>
+            <li><h5>GARLIC BREAD --> RS:120</h5></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3>MAIN COURSE</h3>
+          <ul>
+            <li><h5>SHAHI PANEER --> RS:280</h5></li>
+            <li><h5>VEG BRIYANI --> RS:220</h5></li>
+            <li><h5>JEERA RICE --> Rs:160</h5></li>
+            <li><h5>BUTTER NAAN --> Rs:80</h5></li>
+            <li><h5>TANDOORI ROTI --> Rs:60</h5></li>
+          </ul>
+        </div>
+        <div class="cat">
+          <h3>BEVERAGES</h3>
+          <ul>
+            <li><h5>LIME SODA --> 60</h5></li>
+            <li><h5>SWEET LASSI --> 70</h5></li>
+            <li><h5>SALTED LASSI --> 70</h5></li>
+            <li><h5>HOT COFFEE --> 60</h5></li>
+            <li><h5>HOT TEA --> 40</h5></li>
+          </ul>
+        </div>
+      </div>
+      <div class="about box">
+        <h4>ABOUT US</h4>
+        <hr />
+        <ul class="ab1">
+          <li>
+            <h5>
+              We serve fresh, hygenic and delicious food prepared using
+              high-quality ingredients and traditional recipes.
+            </h5>
+          </li>
+          <li>
+            <h5>
+              Our Restaurant offers a warm and comfortable dining experience
+              with friendly staff and quick services.
+            </h5>
+          </li>
+          <li>
+            <h5>
+              We provide a wide variety of dishes including starters, main
+              courses and beverages to suit every taste.
+            </h5>
+          </li>
+          <li>
+            <h5>
+              Customer satisfaction is our top priority and we strive to deliver
+              great taste at affordable prices.
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div class="contact box">
+        <h4>CONTACT US</h4>
+        <hr />
+        <h4>ADDRESS:</h4>
+        <h5>24/56, RED FORT STREET, DELHI.</h5>
+        <h4>EMAIL ID:</h4>
+        <h5>hasrestaurant123@gmail.com</h5>
+        <h4>PHONE NUMBER:</h4>
+        <h5>+91-7513894782</h5>
+      </div>
+      <div class="footer box">
+        <h6>© 2025 HAS Restaurant. All rights reserved.</h6>
+      </div>
+    </div>
+  </body>
+</html>
